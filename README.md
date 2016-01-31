@@ -2,7 +2,7 @@
 My Python Scripts for mundane tasks
 
 ## csv2json.py
-Usage:
+Usage:  
 *Copy this script to the same directory as your csv file  
 *Run the following command in terminal  
 `python csv2json.py filename.csv`
