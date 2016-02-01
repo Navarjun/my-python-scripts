@@ -34,8 +34,10 @@ with open(filename) as f:
         else:
             fieldValues = line.split('","')
             if len(fieldValues) != len(fieldNames):
-                iterator+=1
-                continue
+                fieldValues = line.split(',')
+                if len(fieldValues) != len(fieldNames):
+                    iterator+=1
+                    continue
             if firstValueIteration:
                 target.write('\t{\n')
                 firstValueIteration = False
